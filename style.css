@@ -1,0 +1,201 @@
+/* Menu */
+.nav-wrap {
+  width: 25%;
+  background: #222;
+  position: fixed;
+  top: 0;
+  right: -25%;
+  height: 100%;
+  z-index: 999;
+}
+.nav-wrap.open {
+  right: 0;
+}
+nav {
+  clear: both;
+  overflow: hidden;
+  padding: 5%;
+  width: 90%;
+}
+nav ul, nav ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+nav ul li a {
+  color: #bbb;
+  font: normal normal 16px/20px 'Arial', sans-serif;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #444;
+  padding: 20px 10px;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: #fff;
+}
+.width-wrap {
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+}
+.width-wrap.open {
+  width: 75%;
+}
+/* Body */
+* {
+  transition: .25s all;
+  -webkit-transition: .25s all;
+  -moz-transition: .25s all;
+  -ms-transition: .25s all;
+  -o-transition: .25s all;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Header */
+header {
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  overflow: hidden;
+  background: #111;
+  position: fixed;
+}
+.open header {
+  width: 75%;
+}
+header.small {
+  background: rgba(0, 0, 0, .9);
+}
+.head {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  clear: both;
+  overflow: hidden;
+}
+.logo {
+  width: 50%;
+  float: left;
+}
+.logo h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font: normal normal 25px/25px 'Arial', sans-serif;
+}
+.logo h2 span {
+  text-transform: lowercase;
+  font: normal normal 20px/25px 'Arial', sans-serif;
+}
+.logo h2 a {
+  color: #fff;
+  text-decoration: none;
+}
+.logo h2 span a {
+  color: #999;
+}
+/* Hamburger Menu */
+#navbtn {
+  width: 50%;
+  float: right;
+  padding: 25px 0;
+}
+.lines.two {
+    clear: both;
+    overflow: hidden;
+    width: 25px;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    cursor: pointer;
+  }
+  .lines.two .line {
+    height: 3px;
+    background: #fff;
+    margin: 4px 0;
+  }
+  .lines.two .line.one {
+    width: 100%;
+  }
+  .lines.two .line.two {
+    width: 72%;
+  }
+  .lines.two .line.three {
+    width: 88%;
+  }
+  .lines.two:hover .line.one {
+    width: 88%;
+  }
+  .lines.two:hover .line.two {
+    width: 100%;
+  } 
+  .lines.two:hover .line.three {
+    width: 72%;
+  }
+  .lines.two.open .line.one {
+    width: 100%;
+    margin: 10px 0 0 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .lines.two.open .line.two {
+    display: none;
+  }
+  .lines.two.open .line.three {
+    margin: -3px 0 10px 0;
+    width: 100%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+/* Content */
+.content-wrap {
+  width: 100%;
+  background: #eee;
+  clear: both;
+  overflow: hidden;
+  padding-top: 100px;
+}
+.content {
+  width: 90%;
+  margin: 0 auto;
+  clear: both;
+  overflow: hidden;
+  padding: 5%;
+}
+.content h1 {
+  font: normal bold 35px/40px 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #121212;
+}
+.content p {
+  font: normal normal 16px/32px 'Arial', sans-serif;
+  color: #333;
+}
+/* Footer */
+footer {
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  overflow: hidden;
+  background: #111;
+}
+.foot {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  clear: both;
+  overflow: hidden;
+}
+.foot p {
+  font: normal normal 13px/20px 'Arial', sans-serif;
+  color: #666;
+}
